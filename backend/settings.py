@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'crm',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -74,13 +76,14 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
+    
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'crm',
-        'HOST': '127.0.0.1',
-        'PORT': '3307',
-        'User':'root',
-        'Password':'rootroot',
+        'USER': 'root',  
+        'PASSWORD': '', 
+        'HOST': 'localhost',
+        'PORT': '3306',  
     }
 }
 
